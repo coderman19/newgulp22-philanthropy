@@ -1,0 +1,32 @@
+@mixin veryBig-text {
+    font-family: 'Roboto';
+    font-weight: 700;
+    color: $blk_color;
+}
+
+@mixin big-text {
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 22px;
+    color: $blk_color;
+
+}
+
+
+@mixin small-text {
+    font-family: 'DM Sans';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    color: #6e6e6e;
+
+}
+
+@mixin btn-text {
+    font-family: 'DM Sans';
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 18px;
+    align-items: center;
+}

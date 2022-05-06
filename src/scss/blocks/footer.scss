@@ -1,0 +1,148 @@
+footer {
+    background-color: $footer_bg;
+}
+
+.footer {
+    display: flex;
+    padding-top: 163px;
+    padding-bottom: 149px;
+
+}
+
+// стили для лого
+.footer__logo {
+    // border: 1px solid #000;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+
+
+    &-img {
+        width: 239px;
+        padding-bottom: 27px;
+    }
+
+    &-text {
+        font-family: DM Sans;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 30px;
+        width: 336px;
+        padding: 0 5px;
+        color: #fff;
+    }
+}
+
+// стили для 2 колонн
+.footer__menu,
+.footer__pages {
+
+    & div {
+        padding-bottom: 22px;
+    }
+
+    & div a {
+        @include small-text;
+        text-decoration: none;
+        // color: $darkgr_color;
+        cursor: pointer;
+    }
+
+    &-title {
+        padding-bottom: 42px;
+        // font-family: Roboto, sans-serif;
+        // font-weight: 500;
+        // font-size: 20px;
+        // line-height: 22px;
+        @include big-text;
+    }
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    // border: 1px solid #000;
+    width: 15%;
+}
+
+// стили для формы
+.footer__form {
+    // border: 1px solid #000;
+    width: 388px;
+    background-color: $ylw_color;
+    width: 40%;
+    border-radius: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+    &-text {
+        font-family: 'Roboto';
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 34px;
+        color: $blk_color;
+        width: 282px;
+        padding-bottom: 21px;
+    }
+
+    &-button {
+        width: 292px;
+        border-radius: 14px;
+        // font-family: DM Sans;
+        // font-weight: 700;
+        // font-size: 18px;
+        // line-height: 20px;
+        // align-items: center;
+        @include btn-text;
+    }
+}
+
+.form-black {
+    background-color: $blk_color;
+    color: #fff;
+    margin-bottom: 16px;
+    padding-top: 24px;
+    padding-bottom: 28px;
+    align-items: center;
+    text-align: center;
+}
+
+.form-grey {
+    // background-color: $gry_color;
+    background-color: #fff;
+    color: $blk_color;
+    padding-top: 24px;
+    padding-bottom: 28px;
+    text-align: center;
+}
+
+// стили для copyright
+
+.copyright {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 32px;
+    color: #ccc;
+    padding-bottom: 20px;
+}
+
+.copyright__icons {
+    width: 344px;
+    display: flex;
+    justify-content: end;
+
+    &-link {
+        width: 36px;
+        height: 36px;
+        border-radius: 5px;
+        // background-color: $blk_color;
+        margin-left: 12px;
+        cursor: pointer;
+    }
+}
